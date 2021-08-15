@@ -1,13 +1,13 @@
 * {
   margin: 0;
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.8fr 0.6fr 0.6fr 0.6fr 0.7fr 0.4fr 0.3fr;
   max-width: 1440px;
   margin: auto;
-  /* padding: 0; */
   width: 100%;
 }
 header {
@@ -324,11 +324,18 @@ h2 {
   filter: brightness(18%) invert(18%);
 }
 
-.six nav {
+.six .nav-down {
   grid-row: 2/3;
   grid-column: 1/2;
   display: flex;
   justify-content: center;
+}
+.six .nav-down .nav-down-ul{
+  display: flex;
+}
+.six .nav-down .nav-down-ul .nav-down-li{
+  list-style: none;
+  margin: 0px 10px 0px 10px;
 }
 .six-a {
   text-decoration: none;
@@ -734,9 +741,7 @@ h2 {
   }
 }
 @media (max-width: 520px) {
-  .six {
-    width: 520px;
-  }
+  
   .ham {
     top: 15px;
     right: 15px;
@@ -765,27 +770,30 @@ h2 {
     left: 110px;
     top: 270px;
   }
+  .six {
+    width: 520px;
+  }
 }
 @media (max-width: 480px) {
   .ham {
     top: 15px;
     right: -35px;
-  }
+  } 
 }
 @media (max-width: 450px) {
-  .ham {
+   .ham {
     top: 15px;
     right: -70px;
   }
 }
 @media (max-width: 400px) {
-  .ham {
+   .ham {
     top: 15px;
     right: -100px;
   }
 }
 @media (max-width: 350px) {
-  .ham {
+   .ham {
     top: 15px;
     right: -150px;
   }
